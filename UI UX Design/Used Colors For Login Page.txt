@@ -1,0 +1,7 @@
+Used Colors For Login Page
+
+Login Form - #b0c1c2
+background - #1f3a93 & #a65da2 ( Gradient )
+login button - #07a5b9
+texts - #000000
+Forgot Password text - #535252
