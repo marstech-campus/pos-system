@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN (for bar chart) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+    <h1 class="logo">My Dashboard</h1>
+    <nav class="nav">
+       <nav>
+        <a href="#" class="nav-link">
+            <span class="nav-icon">🏠</span>
+            <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="nav-icon">👤</span>
+            <span>User Management</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="nav-icon">📦</span>
+            <span>Products</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="nav-icon">🛒</span>
+            <span>Purchases</span>
+        </a>
+
+        <!-- Divider -->
+        <div class="nav-divider"></div>
+
+        <a href="#" class="nav-link sell">
+            <span class="nav-icon">💰</span>
+            <span>Sell</span>
+        </a>
+
+        <!-- 3 line gap Sell apram -->
+        <a href="#" class="nav-link">
+            <span class="nav-icon">❓</span>
+            <span>Help Centre</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+        </a>
+    </nav>
+</aside>
+
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="icons">
+                    <span>⬆️</span>
+                    <span>➕</span>
+                    <span>🧮</span>
+                    <span>💳</span>
+                </div>
+                <div class="date-shop">
+                    <span>4/25/2025</span>
+                    <span>(Shop Name)</span>
+                    <span>🔔</span>
+                </div>
+            </header>
+
+            <h1><section class="welcome-section"></h1>
+                <h1>Welcome (Shop Name)</h1>
+                <select class="location-select">
+                    <option>Select location</option>
+                </select>
+
+                <select class="date-filter">
+                    <option>Filter by date</option>
+                </select>
+            </section>
+<section class="cards">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">💰</span>
+            <div class="card-text">
+                <span class="card-title">Total Sales</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">📈</span>
+            <div class="card-text">
+                <span class="card-title">Net</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">🧾</span>
+            <div class="card-text">
+                <span class="card-title">Invoice Due</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">↩️</span>
+            <div class="card-text">
+                <span class="card-title">Total Sell Return</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">🛒</span>
+            <div class="card-text">
+                <span class="card-title">Total Purchase</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">📄</span>
+            <div class="card-text">
+                <span class="card-title">Purchase Due</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">↩️</span>
+            <div class="card-text">
+                <span class="card-title">Total Purchase Return</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-icon">💸</span>
+            <div class="card-text">
+                <span class="card-title">Expense</span>
+                <small>LKR 0.00</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+</section>
+
+            </section>
+
+            <section class="chart-section">
+                <canvas id="salesChart" width="600" height="300"></canvas>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
