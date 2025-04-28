@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+    <!-- Illustrator image 
+     you can change path and image name for your setup-->
+    <div class="bg_img">
+        <img src="bg.png" alt="">
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-container">
+
+        <div class="logo">
+            <img src="your-logo.png" alt="Company Logo">
+        </div>
+        
+        <div class="login-header">
+            <h1>Welcome Back</h1>
+            <p>Please enter your details to sign in.</p>
+        </div>
+        
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Enter Your Email..." required>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" placeholder="Password" required id="password">
+                <span class="password-toggle" onclick="togglePassword()">
+                    <i class="far fa-eye"></i>
+                </span>
+            </div>
+            
+            <div class="options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+            
+            <button type="submit" class="login-button"><b>Log in</b></button>
+        </form>
+    </div>
+
+
+    <!-- Password Eye Button -->
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const eyeIcon = document.querySelector('.password-toggle i');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                eyeIcon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                eyeIcon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>
