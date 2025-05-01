@@ -28,7 +28,7 @@ body {
     height: 100%;
     object-fit: cover; /* Ensures the image covers the entire screen */
     object-position: center; /* Centers the image */
-    filter: blur(5px); /* Optional: Adds a blur effect */
+    filter: blur(0px); /* Optional: Adds a blur effect */
     opacity: 0.8; /* Optional: Reduces opacity */
 }
 
